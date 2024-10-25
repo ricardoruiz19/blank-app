@@ -4,7 +4,7 @@ from PIL import Image
 import requests
 from io import BytesIO
 
-dataset = pd.read_csv('https://raw.githubusercontent.com/JuliethSuarezPoveda/Julieth/refs/heads/main/fincaraiz_final.csv')
+dataset = pd.read_csv('https://raw.githubusercontent.com/JuliethSuarezPoveda/gdp-dashboard/refs/heads/main/fincaraiz_final.csv')
 
 dataset['title'] = dataset['title'].str.replace('en arriendo', '', regex=False)
 dataset['title'] = dataset['title'].str.replace('en Arriendo', '', regex=False)
